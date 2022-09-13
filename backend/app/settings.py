@@ -1,3 +1,4 @@
+import os
 
-secret = 'secret'
-vcf_file = '/home/etsagkaris/Desktop/saphetor/backend/NA12877_API_10.vcf'
+secret = os.environ.get("SAPHETOR_SECRET")
+vcf_file = os.environ.get("SAPHETOR_VCF_FILE_PATH")
